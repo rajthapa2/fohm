@@ -1,0 +1,27 @@
+﻿@using trail.Models;
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@*@section scripts{*@
+@*    <script src="~/Scripts/libs/angular-1.6.6.js"></script>*@
+@*    <script src="~/Scripts/models/app.js"></script>*@
+@*    <script src="~/Scripts/models/fohmController.js"></script>*@
+@*}*@
+
+
+<script>
+    window.mvcValue = @ModelValue.MvcValue;
+</script>
+
+<div ng-app="FohmApp">
+<div ng-controller="fohmCtrl">
+    <h2>Raja FOHM App</h2>
+    
+    <button ng-click="Sub()">MINUS</button>
+
+    <p>{{mvcValue}}</p>
+
+    <button ng-click="Add()">ADD</button>
+</div>
+</div>
